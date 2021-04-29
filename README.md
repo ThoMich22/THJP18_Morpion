@@ -4,4 +4,4 @@ Si tu rencontres des difficultés à lancer le jeu, suit les instructions ci-des
 
 1) Lance dans ton terminal le fichier "app.rb" 
 2) Renres ton prénom et celui du ton adversaire 
-3) 
+3) Mais après on s'est un peu raté
