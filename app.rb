@@ -4,19 +4,25 @@ require 'BoardCase'
 require 'Game'
 require 'Player'
 require 'Show'
+require 'bundler'
+Bundler.require
 
-my_game = Game.new
+class Application
 
-my_game.lets_go
+  def perform
+    my_game = Game.new
 
-while my_game.status == "Ongoing"
-  
-  my_game.turn
-  
-  
-  
-  
+    my_game.lets_go
 
-  
+    while my_game.status == "Ongoing"
+      
+      my_game.turn
+      
+      
+    end
+    my_game.game_end(my_game.lets_go)
+  end
+
 end
-my_game.game_end(my_game.lets_go)
+
+Application.new.perform
